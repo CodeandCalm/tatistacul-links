@@ -9,7 +9,7 @@ Este es mi sitio personal de enlaces, inspirado en el estilo Linktree, pero con 
 
 ## 🎓 Créditos
 
-Este proyecto fue creado por  **Thomas O'Neil**, experto en ciberseguridad y mentor en LinkedIn.  
+Este proyecto fue creado por  **Thomas O'Neil Alvarez **, experto en ciberseguridad y mentor en LinkedIn.  
 Gracias por compartir conocimientos de forma generosa y clara. 🙌
 
 ---
