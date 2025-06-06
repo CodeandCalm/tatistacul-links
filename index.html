@@ -1,40 +1,126 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thomas O'Neil Álvarez</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/x-icon" href="favicons/anonymous.ico" />
+  <title>@codigoycalma | Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background: radial-gradient(ellipse at center, #0a0f1f 0%, #000000 100%);
+      color: #cafffb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px 10px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://i.imgur.com/1HSbHUl.gif') center center / cover no-repeat;
+      opacity: 0.08;
+      z-index: -1;
+      animation: pulse 10s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.08; }
+      100% { transform: scale(1.03); opacity: 0.1; }
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00ffe7;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px rgba(0, 255, 231, 0.6);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #00ffe7, 0 0 10px #00ffe7;
+    }
+
+    p {
+      margin-bottom: 25px;
+      color: #82f4ea;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .link-list a {
+      text-decoration: none;
+      background: #111;
+      border: 2px solid #00ffe7;
+      padding: 14px 24px;
+      text-align: center;
+      font-size: 16px;
+      color: #00ffe7;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(0, 255, 231, 0.2);
+    }
+
+    .link-list a:hover {
+      background: #00ffe7;
+      color: #000;
+      box-shadow: 0 0 20px rgba(0, 255, 231, 0.6);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .link-list a {
+        font-size: 14px;
+        padding: 12px 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <div id="particles-js"></div>
-
-  <div class="container">
-    <img src="profile.png" alt="Foto de perfil" class="profile-img" />
-    <h1>Thomas O'Neil Álvarez</h1>
-    <p>Ethical Hacker, divulgador y experto en marca personal en LinkedIn</p>
-
-    <div class="button-container">
-      <a href="https://github.com/ccyl13" target="_blank" class="link-btn">
-        <img src="favicons/github.ico" alt="GitHub" class="icon"> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/thomasoneil%C3%A1lvarez/" target="_blank" class="link-btn">
-        <img src="favicons/linkedin.ico" alt="LinkedIn" class="icon"> LinkedIn
-      </a>
-      <a href="https://www.instagram.com/thomas_oneil_alvarez_/" target="_blank" class="link-btn">
-        <img src="favicons/instagram.ico" alt="Instagram" class="icon"> Instagram
-      </a>
-      <a href="https://tusendadigital.com" target="_blank" class="link-btn">
-        <img src="favicons/tusenda.ico" alt="Tusenda" class="icon"> Desarrollo Web Seguro
-      </a>
-      <a href="https://elrincondelhacker.es/pagina-de-ventas-hazte-viral-linkedin/" target="_blank" class="link-btn">
-        <img src="favicons/viralizate.ico" alt="Viralízate" class="icon"> Viralízate en LinkedIn
-      </a>
-    </div>
+  <div class="background"></div>
+  <img src="https://i.imgur.com/Xr1B1eQ.jpg" alt="Tatiana" class="profile-pic">
+  <h1>@codigoycalma</h1>
+  <p>Psychology 🧠 meets Cybersecurity 🔐</p>
+  <div class="link-list">
+    <a href="https://www.linkedin.com/in/tatiana-staculpsi/" target="_blank">LinkedIn</a>
+    <a href="https://codigocalma.com" target="_blank">Sitio Web</a>
+    <a href="https://www.instagram.com/psi.tatianastacul/" target="_blank">Instagram</a>
+    <a href="https://github.com/codigoycalma" target="_blank">GitHub</a>
+    <a href="mailto:info@codigocalma.com">Contacto</a>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
+  <footer>2025 © codigoycalma</footer>
 </body>
+
 </html>
